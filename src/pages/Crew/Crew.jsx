@@ -11,10 +11,10 @@ export default function Crew() {
       className="min-h-screen bg-cover bg-center bg-no-repeat text-white font-sans flex flex-col"
       style={{ backgroundImage: "url('/crew/background-crew-desktop.jpg')" }}
     >
-      <div className="flex-grow flex flex-col px-4 py-32 md:px-16 lg:px-24">
+      <div className="flex-grow flex flex-col px-4 py-28 md:px-16 lg:px-24">
 
-        <h1 className="uppercase text-xl tracking-widest text-center md:text-left mb-8">
-          <span className="font-bold opacity-30 mr-4">02</span> Meet your crew
+        <h1 className="uppercase text-xl tracking-widest font-barlowCondensed text-center md:text-left mb-8">
+          <span className="font-bold opacity-30  mr-4">02</span> Meet your crew
         </h1>
 
         <div className="flex flex-col-reverse md:flex-row-reverse items-center gap-10 md:gap-20 max-w-7xl w-full mx-auto">
@@ -27,13 +27,13 @@ export default function Crew() {
 
           <div className="text-center md:text-left space-y-6 max-w-xl">
 
-            <h2 className="text-lg md:text-2xl text-gray-400 uppercase font-serif tracking-wider">
+            <h2 className="text-lg md:text-2xl text-gray-400 uppercase font-bellefair tracking-wider"> 
               {crew.role}
             </h2>
 
-            <h1 className="text-3xl md:text-5xl uppercase font-serif">{crew.name}</h1>
+            <h1 className="text-3xl md:text-5xl uppercase font-bellefair">{crew.name}</h1>
 
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed font-sans">
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed font-barlowCondensed w-2/3">
               {crew.description}
             </p>
 
