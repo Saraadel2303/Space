@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import destinations from '../../Data/Destinations'
 
 
-
-
 export default function Destination() {
 
   const [current, setCurrent] = useState(0);
@@ -11,19 +9,21 @@ export default function Destination() {
 
   
   return (
-    <main className="min-h-screen text-white bg-cover bg-center bg-no-repeat px-4 md:px-12 lg:px-32 pt-28 md:pt-36 lg:pt-48"
+    <main className="min-h-screen bg-cover bg-center bg-no-repeat text-white font-sans flex flex-col"
     style={{ backgroundImage: "url('/destination/background-destination-desktop.jpg')" }}>
     
-    <h2 className="uppercase text-xl tracking-widest text-center md:text-left mb-8">
+    <div  className="flex-grow flex flex-col px-4 py-20 md:px-16 lg:px-24">
+      
+    <h2 className="uppercase text-xl tracking-widest text-center md:text-left mb-20 pt-3">
       <span className="font-bold opacity-30 mr-4">01</span> Pick your destination
     </h2>
 
-    <div className="flex flex-col lg:flex-row items-center gap-28">
+    <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-20 max-w-7xl w-full mx-auto">
       
       <img
         src={planet.image}
         alt={planet.name}
-        className="w-48 md:w-72 lg:w-[400px] transition-all duration-500"
+        className="w-full max-w-xs md:max-w-md lg:max-w-lg max-h-[400px] object-contain"
       />
 
       <div className="text-center lg:text-left max-w-xl">
@@ -63,6 +63,7 @@ export default function Destination() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   </main>
   )
