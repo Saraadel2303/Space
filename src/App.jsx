@@ -7,7 +7,7 @@ import Technology from './pages/Technology/Technology'
 import Layout from './pages/Layout/Layout'
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path:"" , element:<Layout/> , children:[{
       index:true , element:<Home/>
