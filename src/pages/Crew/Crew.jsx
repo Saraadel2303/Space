@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import crewData from '../../Data/crewData';
+import crewData from '../../Data/crewData.js';
 
 export default function Crew() {
   

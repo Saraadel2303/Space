@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import destinations from '../../Data/Destinations'
+import destinations from '../../Data/Destinations.js'
 
 
 export default function Destination() {

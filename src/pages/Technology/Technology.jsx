@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import technologyData from '../../Data/technologyData';
+import technologyData from '../../Data/technologyData.js';
 
 export default function Technology() {
   const [current, setCurrent] = useState(0);
